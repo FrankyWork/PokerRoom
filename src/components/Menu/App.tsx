@@ -1,10 +1,12 @@
 import React from 'react';
-import '../styles/App.css';
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      123
+        <p className="App__hello">
+            Hello world
+        </p>
     </div>
   );
 }
