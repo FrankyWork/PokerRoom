@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-modal": "^3.16.3",
     "sass": "^1.77.7"
   }
 }

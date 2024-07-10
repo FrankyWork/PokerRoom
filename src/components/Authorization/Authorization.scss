@@ -1,0 +1,14 @@
+.Authorization{
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    &__input {
+      background: white;
+      color: red;
+    }
+  }
+  &__button_continue{
+    background: white;
+    width: 100%;
+  }
+}

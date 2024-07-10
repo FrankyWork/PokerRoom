@@ -1,12 +1,11 @@
 import React from 'react';
 import './App.scss';
+import {Authorization} from "../Authorization/Authorization";
 
 function App() {
   return (
     <div className="App">
-        <p className="App__hello">
-            Hello world
-        </p>
+        <Authorization />
     </div>
   );
 }
