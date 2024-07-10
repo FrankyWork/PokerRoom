@@ -10,6 +10,7 @@ export const Authorization = () => {
         handlePasswordChange,
         handleContinueButton
     } = useAuthorization();
+    
 
     return (
         <div className="Authorization">
