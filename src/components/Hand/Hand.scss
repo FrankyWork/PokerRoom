@@ -1,0 +1,32 @@
+.card{
+  display: flex;
+  gap: 5px;
+  &__Diamonds{
+    color: white;
+    background: blue;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  &__Hearts{
+    color: white;
+    background: red;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  &__Clubs{
+    color: white;
+    background: green;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  &__Spades{
+    color: white;
+    background: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+  }
+}
