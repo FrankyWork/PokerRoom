@@ -1,14 +1,12 @@
 import './App.scss';
-import {useGetHandCards} from "../../hooks/useGetHandCards";
+import Hand from "../Hand/Hand";
 
 
 function App() {
-
-    const cards = useGetHandCards();
-
     return (
         <div>
-            {cards.map(item => item + " ")}
+            <Hand />
+            <Hand />
         </div>
     );
 }

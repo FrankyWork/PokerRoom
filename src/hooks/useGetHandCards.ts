@@ -1,11 +1,10 @@
 import {useGetCardName} from "./useGetCardName";
-import {useGetRandomCardIndex} from "./useGetRandomCardIndex";
 
-export function useGetHandCards() {
-    const card1 = useGetRandomCardIndex();
-    const card2 = useGetRandomCardIndex();
-    const cardName1 = useGetCardName(card1);
-    const cardName2 = useGetCardName(card2);
+export function useGetHandCards(index:  number[]) {
 
-    return [cardName1, cardName2];
+    const suits = ['Diamonds', 'Hearts', 'Clubs', 'Spades']
+
+    const cardName = useGetCardName(index[0]);
+
+    return [cardName , suits[index[1]]];
 }
