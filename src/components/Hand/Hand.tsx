@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import useHand from "./useHand";
 import "./Hand.scss"
 
 const Hand = () => {
+    const [hand, setHand] = useState<string[]>();
 
-    const { firstCard, secondCard} = useHand();
+    const { firstCard, secondCard } = useHand();
 
     return (
         <>
