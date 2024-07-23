@@ -1,13 +1,16 @@
-import React from 'react';
 import './App.scss';
-import {Authorization} from "../Authorization/Authorization";
+import {useGetHandCards} from "../../hooks/useGetHandCards";
+
 
 function App() {
-  return (
-    <div className="App">
-        <Authorization />
-    </div>
-  );
+
+    const cards = useGetHandCards();
+
+    return (
+        <div>
+            {cards.map(item => item + " ")}
+        </div>
+    );
 }
 
 export default App;
